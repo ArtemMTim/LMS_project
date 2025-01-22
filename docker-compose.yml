@@ -36,8 +36,7 @@ services:
       - db
     env_file:
       - ./.env
-    environment:
-      - POSTGRES_HOST=db
+
 
   celery:
     build: .
@@ -52,10 +51,7 @@ services:
       - .:/app
     env_file:
       - .env
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-      - POSTGRES_HOST=db
+
 
   celery-beat:
     build: .
@@ -70,10 +66,7 @@ services:
       - .:/app
     env_file:
       - .env
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-      - POSTGRES_HOST=db
+
 
 
 volumes:
