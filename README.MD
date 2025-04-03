@@ -22,7 +22,7 @@
 Для запуска без использования контейнеризации:
 1. Клонируйте репозиторий:
 ```
-https://github.com/ArtemMTim/DRF_DZ_Project
+https://github.com/ArtemMTim/LMS_project
 ```
 2. Установите зависимости:
 ```
